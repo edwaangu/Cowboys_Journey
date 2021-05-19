@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7302099-9A9C-4574-8AB2-A09727A8A0FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CowboysJourney</RootNamespace>
+    <AssemblyName>CowboysJourney</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC13-A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC13-B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC13-C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC13-D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC13-E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC13-F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneC13-G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-Pre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-Pre2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-TWB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-TWB2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-TWBF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-TWBF2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-YBS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-YBS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-YWB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-YWB2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-YWBF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneA4-YWBF2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB2-A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB2-B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB4-Crack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB4-End.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB4-End2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB4-Fall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB4-Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB4-Walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB4-Walk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Crack1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Crack1_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Fall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Fall1_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Fall2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Fall3FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Fall3LH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Start_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Town.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Town_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Trot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Trot_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Trot2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB9-Trot2_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB14_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB15_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB16_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB18_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB19_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB20_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneB17_FH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneD2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneD3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneD3_F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneD3_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneD6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Video_Game_Splash-Ploor-699235037.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUN_FIRE-GoodSoundForYou-820112263.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
